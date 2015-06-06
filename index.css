@@ -74,6 +74,14 @@ html, body {
 
 
 /* ========= skill ========== */
+@-webkit-keyframes {
+    0% {
+        box-shadow: inset 0px 0px #626262;
+    }
+    100% {
+        box-shadow: inset 0px 150px #4a9be2;
+    }    
+}
 @keyframes skill_ready_animation {
     0% {
         box-shadow: inset 0px 0px #626262;
