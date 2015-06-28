@@ -59,15 +59,15 @@ $(document).ready(function(){
     slimeAttack(slime2);
     slimeAttack(slime3);
 
-    $砍杀.addClass("attack_ready_anime");
+    $砍杀.addClass("attack-ready-anime");
     setTimeout(function(){
         $砍杀.addClass("skill-ready");
-        $砍杀.removeClass("attack_ready_anime");
+        $砍杀.removeClass("attack-ready-anime");
     }, 5000);
-    $治疗.addClass("heal_ready_anime");
+    $治疗.addClass("heal-ready-anime");
     setTimeout(function(){
         $治疗.addClass("skill-ready");
-        $治疗.removeClass("heal_ready_anime");
+        $治疗.removeClass("heal-ready-anime");
     }, 12000);
 
     $("#砍杀").click(function() {
@@ -96,10 +96,10 @@ $(document).ready(function(){
             toastr.success("治疗 +5");
 
             $治疗.removeClass("skill-ready");
-            $治疗.addClass("heal_ready_anime");
+            $治疗.addClass("heal-ready-anime");
             setTimeout(function(){
                 $治疗.addClass("skill-ready");
-                $治疗.removeClass("heal_ready_anime");
+                $治疗.removeClass("heal-ready-anime");
             }, 12000);
         }
     });
@@ -130,10 +130,10 @@ $(document).ready(function(){
             toastr.success("攻击 " + s + " Damage: " + damage + "   " + s + "剩余hp: " + slime.hp);
 
             $砍杀.removeClass("skill-ready");
-            $砍杀.addClass("attack_ready_anime");
+            $砍杀.addClass("attack-ready-anime");
             setTimeout(function(){
                 $砍杀.addClass("skill-ready");
-                $砍杀.removeClass("attack_ready_anime");
+                $砍杀.removeClass("attack-ready-anime");
             }, 5000);
 
         }
